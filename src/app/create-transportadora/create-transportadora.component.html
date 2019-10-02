@@ -1,0 +1,20 @@
+<h3>Criar Transportadora</h3>
+<div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" required [(ngModel)]="transportadora.nome" name="nome">
+        </div>
+
+        <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="text" class="form-control" id="telefone" required [(ngModel)]="transportadora.telefone" name="telefone">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+
+<div [hidden]="!submitted">
+    <h4>Salvo com Sucesso!</h4>
+</div>
