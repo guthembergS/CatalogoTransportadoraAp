@@ -1,0 +1,12 @@
+<div *ngIf="transportadora">
+    <div>
+        <label>nome: </label> {{transportadora.nome}}
+    </div>
+    <div>
+        <label>telefone: </label> {{transportadora.telefone}}
+    </div>
+
+    <span class="button is-small btn-danger" (click)='deleteTransportadora()'>Delete</span>
+
+    <hr/>
+</div>
