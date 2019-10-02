@@ -10,11 +10,66 @@
             <label for="telefone">Telefone</label>
             <input type="text" class="form-control" id="telefone" required [(ngModel)]="transportadora.telefone" name="telefone">
         </div>
-
+      
+        <div class="form-group">
+            <label for="celular">Celular</label>
+            <input type="text" class="form-control" id="celular" required [(ngModel)]="transportadora.celular" name="celular">
+        </div>
+        
+        <div class="form-group">
+            <label for="whatsapp">Whatsapp</label>
+            <input type="text" class="form-control" id="whatsapp" required [(ngModel)]="transportadora.whatsapp" name="whatsapp">
+        </div>
+      
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" id="email" required [(ngModel)]="transportadora.email" name="email">
+        </div>
+      
+        <div class="form-group">
+            <label for="modal">Modal</label>
+            <input type="text" class="form-control" id="modal" required [(ngModel)]="transportadora.modal" name="modal">
+        </div>
+      
+        <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input type="text" class="form-control" id="empresa" required [(ngModel)]="transportadora.empresa" name="empresa">
+        </div>
+      
+        <div class="form-group">
+            <label for="cep">Cep</label>
+            <input type="text" class="form-control" id="cep" required [(ngModel)]="transportadora.cep" name="cep">
+        </div>
+        
+        <div class="form-group">
+            <label for="estado">Estado</label>
+            <input type="text" class="form-control" id="estado" required [(ngModel)]="transportadora.estado" name="estado">
+        </div>
+      
+        <div class="form-group">
+            <label for="cidade">Cidade</label>
+            <input type="text" class="form-control" id="cidade" required [(ngModel)]="transportadora.cidade" name="cidade">
+        </div>
+      
+        <div class="form-group">
+            <label for="bairro">Bairro</label>
+            <input type="text" class="form-control" id="bairro" required [(ngModel)]="transportadora.bairro" name="bairro">
+        </div>
+      
+        <div class="form-group">
+            <label for="logradouro">Rua/Avenida</label>
+            <input type="text" class="form-control" id="logradouro" required [(ngModel)]="transportadora.logradouro" name="logradouro">
+        </div>
+      
+        <div class="form-group">
+            <label for="numeroLogradouro">Número</label>
+            <input type="text" class="form-control" id="numeroLogradouro" required [(ngModel)]="transportadora.numeroLogradouro" name="numeroLogradouro">
+        </div>
+      
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
 </div>
 
 <div [hidden]="!submitted">
-    <h4>Salvo com Sucesso!</h4>
+    <h4>Transportadora salva com Sucesso!</h4>
 </div>
